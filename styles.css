@@ -1,0 +1,66 @@
+/* COLOR SYSTEM */
+
+
+.team-card {
+padding: 20px;
+background: var(--primary-dark);
+color: white;
+border-radius: 10px;
+}
+
+
+/* TESTIMONIAL */
+.testimonial-card {
+padding: 30px;
+border-left: 5px solid var(--primary);
+background: #f3e6ff;
+border-radius: 8px;
+}
+
+
+/* FOOTER */
+footer {
+background: #2a0145;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+
+
+/* MOBILE STYLES */
+@media (max-width: 850px) {
+.nav-links {
+position: fixed;
+top: 0;
+right: -100%;
+width: 70%;
+height: 100vh;
+background: var(--primary);
+flex-direction: column;
+padding-top: 80px;
+transition: right 0.4s ease;
+}
+
+
+.nav-links a {
+font-size: 1.3rem;
+}
+
+
+.hamburger {
+display: block;
+}
+
+
+.nav-links.active {
+right: 0;
+}
+}
+
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
